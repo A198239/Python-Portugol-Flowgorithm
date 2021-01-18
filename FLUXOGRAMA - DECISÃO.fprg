@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="andwa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-06 05:55:28 "/>
+        <attribute name="created" value="YW5kd2E7TEFQVE9QLUVGQUNNVTFIOzIwMjAtMTAtMDY7IjA1OjI0OjI4ICI7Mjc3Mw=="/>
+        <attribute name="edited" value="YW5kd2E7TEFQVE9QLUVGQUNNVTFIOzIwMjAtMTAtMDY7IjA1OjU1OjI4ICI7MTsyODg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cliente" type="String" array="False" size=""/>
+            <declare name="cartao" type="Boolean" array="False" size=""/>
+            <declare name="numero" type="String" array="False" size=""/>
+            <input variable="cliente"/>
+            <input variable="cartao"/>
+            <if expression="cartao">
+                <then>
+                    <input variable="numero"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente a loja somente aceita cartao de credito ou debito.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
